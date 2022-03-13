@@ -1,0 +1,11 @@
+<h1>Listado de ciudades</h1> <button (click)="inicializarCiudades()">Inicializar ciudades</button>
+<hr>
+<h3>Ciudades</h3>
+<ul>
+  <li *ngFor="let item of ciudades; let i = index">{{ i + 1 }} - {{ item }} <button (click)="borrarCiudad(i)">Eliminar dia</button></li>
+</ul>
+<h3>Ciudades borradas</h3>
+<ul>
+  <li *ngFor="let item of ciudadesBorradas; let i = index">{{ i + 1 }} - {{ item }}</li>
+</ul>
+
